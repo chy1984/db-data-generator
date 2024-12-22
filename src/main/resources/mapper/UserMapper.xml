@@ -3,17 +3,19 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.chy.template.db.faker.mapper.UserMapper">
+<mapper namespace="com.chy.db.data.generator.mapper.UserMapper">
 
     <insert id="batchInsert">
-        insert ignore into t_user (`username`, `tel`, `address`, `birthday`) values
-        <foreach collection="list" item="user" separator=",">
-            (#{user.username}, #{user.tel}, #{user.address}, #{user.birthday})
+        INSERT IGNORE INTO t_user
+        (`username`, `tel`, `email`, `address`, `birthday`)
+        VALUES
+        <foreach collection="records" item="user" separator=",">
+            (#{user.username}, #{user.tel}, #{user.email}, #{user.address}, #{user.birthday})
         </foreach>
     </insert>
 
     <delete id="truncateTable">
-        truncate table t_user
+        TRUNCATE TABLE t_user
     </delete>
 
 </mapper>

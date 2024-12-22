@@ -1,4 +1,4 @@
-package com.chy.template.db.faker.entity;
+package com.chy.db.data.generator.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 用户表
+ * 用户表对应的实体类
  *
  * @author chy
  */
@@ -26,6 +26,8 @@ public class User implements Serializable {
     private String username;
 
     private String tel;
+
+    private String email;
 
     private String address;
 

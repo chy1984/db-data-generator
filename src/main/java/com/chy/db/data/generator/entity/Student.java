@@ -1,4 +1,4 @@
-package com.chy.template.db.faker.entity;
+package com.chy.db.data.generator.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 学生表
+ * 学生表对应的实体类
  *
  * @author chy
  */

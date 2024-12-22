@@ -1,12 +1,12 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/user?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/db-data-generator?serverTimezone=Asia/Shanghai&allowMultiQueries=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: abcd
 
 mybatis:
   mapper-locations: classpath:mapper/**.xml
-  type-aliases-package: com.chy.template.db.faker.entity
+  type-aliases-package: com.chy.db.data.generator.entity
   configuration:
     map-underscore-to-camel-case: true

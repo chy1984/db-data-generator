@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.chy</groupId>
-    <artifactId>template-db-faker</artifactId>
+    <artifactId>db-data-generator</artifactId>
     <version>1.0</version>
-    <name>template-db-faker</name>
-    <description>基于 springboot + mybatis 构建，用于往db中插入假数据</description>
+    <name>db-data-generator</name>
+    <description>数据库数据生成器，用于往数据表中插入假数据，基于 springboot + mybatis 构建</description>
 
     <properties>
         <java.version>1.8</java.version>
